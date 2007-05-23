@@ -1,4 +1,4 @@
-## Interface: 21000
+## Interface: 20100
 
 ## Title: Day Trader
 ## Notes: Fast alt-click item trading.
