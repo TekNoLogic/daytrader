@@ -1,4 +1,4 @@
---[[ Alt-Click to add an item to a mail for sending or to the trade frame. ]]--
+if IS_WRATH_BUILD == nil then IS_WRATH_BUILD = (select(4, GetBuildInfo()) >= 30000) end
 
 -- Most of this code is grennon's from AltClickToAddItem, I just removed the dependancy on AceHooks
 -- AltClickToAddItem based on GMail 1.x which was ported from CT_MailMod pre-1.5
@@ -7,7 +7,9 @@ local targ, bag, slot
 
 
 local orig1 = ContainerFrameItemButton_OnModifiedClick
-ContainerFrameItemButton_OnModifiedClick = function(button, ...)
+ContainerFrameItemButton_OnModifiedClick = function(...)
+	local self, button
+	if IS_WRATH_BUILD then self, button = ... else button = ... end
   if button == "LeftButton" and IsAltKeyDown() and not CursorHasItem() then
     bag, slot = this:GetParent():GetID(), this:GetID()
 		if TradeFrame:IsVisible() then
@@ -25,7 +27,7 @@ ContainerFrameItemButton_OnModifiedClick = function(button, ...)
       return
     end
   end
-  orig1(button, ...)
+  orig1(...)
 end
 
 
