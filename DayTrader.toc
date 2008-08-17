@@ -3,7 +3,7 @@
 ## Title: Day Trader
 ## Notes: Fast alt-click item trading.
 ## Author: Tekkub Stoutwrithe
-## Version: Alpha
+## Version: 3.0.1.1
 ## X-Credits: AltClickToAddItem by Grennon
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com

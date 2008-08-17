@@ -1,7 +1,0 @@
-DayTrader is a simple addon that allows you to target a player and alt-click an item in your bags to open a trade window with the item.  You can also alt-click when the trade window is open to add items.
-
-h2. Links
-
-<b>Visit "my site":http://www.tekkub.net/addons/DayTrader for more info.<br>
-Please report all bugs and feature requests to my "Google Code":http://code.google.com/p/tekkub-wow/issues/list?can=1&q=addon:DayTrader&sort=status+milestone&colspec=ID%20Type%20Status%20Addon%20Milestone%20Summary tracker<br>
-Please direct all feedback and questions to my "Google Groups":http://groups-beta.google.com/group/tekkub-wow mailinglist.</b>
