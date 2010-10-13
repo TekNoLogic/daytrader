@@ -8,7 +8,7 @@ local targ, bag, slot
 local orig1 = ContainerFrameItemButton_OnModifiedClick
 ContainerFrameItemButton_OnModifiedClick = function(self, button, ...)
   if button == "LeftButton" and IsAltKeyDown() and not CursorHasItem() then
-    bag, slot = this:GetParent():GetID(), this:GetID()
+    bag, slot = self:GetParent():GetID(), self:GetID()
 		if TradeFrame:IsVisible() then
       for i=1,6 do
         if not GetTradePlayerItemLink(i) then
